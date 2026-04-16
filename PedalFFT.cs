@@ -51,6 +51,12 @@ namespace WDE.PedalFFT
             Description = "Wet/dry blend (0 = fully dry, 100 = fully wet)")]
         public int WetMix { get; set; }
 
+        [ParameterDecl(MinValue = 0, MaxValue = 400, DefValue = 100,
+            Name = "Level",
+            Description = "Output level trim. 100 = unity, 200 = +6 dB, 400 = +12 dB. " +
+                          "Use to compensate for Drive's natural volume reduction.")]
+        public int Level { get; set; }
+
         [ParameterDecl(MinValue = 0, MaxValue = 256, DefValue = 128,
             Name = "Bin Shift",
             Description = "Shift spectrum up or down by N bins. " +
@@ -106,11 +112,12 @@ namespace WDE.PedalFFT
             int   fftN = IndexToFftSize(FftSizeIdx);
             EnsureWindow(fftN);
 
-            float driveScale = Drive      / 50f;  // 0..4
-            float harmAmt    = Harmonics  / 100f; // 0..1
-            float gateAmt    = SpectralGate/ 100f;// 0..1
-            float wet        = WetMix     / 100f;
+            float driveScale = Drive       / 50f;   // 0..4
+            float harmAmt    = Harmonics   / 100f;  // 0..1
+            float gateAmt    = SpectralGate / 100f; // 0..1
+            float wet        = WetMix      / 100f;
             float dry        = 1f - wet;
+            float levelScale = Level       / 100f;  // 0..4  (100 = unity)
             int   binShift   = BinShift - 128; // 0–256 param, 128 = centre = no shift
 
             for (int i = 0; i < n; i++)
@@ -121,8 +128,8 @@ namespace WDE.PedalFFT
                 float wL = _chL.Tick(dL, fftN, _win, driveScale, harmAmt, gateAmt, binShift);
                 float wR = _chR.Tick(dR, fftN, _win, driveScale, harmAmt, gateAmt, binShift);
 
-                output[i].L = dry * dL + wet * wL;
-                output[i].R = dry * dR + wet * wR;
+                output[i].L = (dry * dL + wet * wL) * levelScale;
+                output[i].R = (dry * dR + wet * wR) * levelScale;
             }
             return true;
         }
