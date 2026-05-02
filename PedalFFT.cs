@@ -85,6 +85,14 @@ namespace WDE.PedalFFT
         readonly float[]      _win = new float[2048];
         int _lastWindowN = 0;
 
+        // Silence detection — counts samples remaining to process after input
+        // goes quiet (tail = 2 full hops so the STFT overlap buffer drains cleanly).
+        // When _tailSamples reaches 0 with no new signal, Work() returns false.
+        int _tailSamples = 0;
+
+        // ~-72 dBFS relative to ±32768 full-scale. Anything quieter is silence.
+        const float SILENCE_THRESH = 8.0f;
+
         // ── Constructor ───────────────────────────────────────────────────────
         public PedalFFTMachine(IBuzzMachineHost host)
         {
@@ -111,6 +119,26 @@ namespace WDE.PedalFFT
 
             int   fftN = IndexToFftSize(FftSizeIdx);
             EnsureWindow(fftN);
+
+            // ── Silence detection ─────────────────────────────────────────────
+            // Scan the input block for a peak sample. If signal is present,
+            // reset the tail counter to 2 hops so the STFT overlap buffer has
+            // time to drain fully before we stop processing.
+            float peakIn = 0f;
+            for (int i = 0; i < n; i++)
+            {
+                float absL = MathF.Abs(input[i].L);
+                float absR = MathF.Abs(input[i].R);
+                if (absL > peakIn) peakIn = absL;
+                if (absR > peakIn) peakIn = absR;
+            }
+
+            if (peakIn > SILENCE_THRESH)
+                _tailSamples = fftN * 2;   // signal present — keep tail alive
+            else if (_tailSamples <= 0)
+                return false;              // tail fully drained — skip processing
+            else
+                _tailSamples -= n;         // tail draining — keep going this block
 
             float driveScale = Drive       / 50f;   // 0..4
             float harmAmt    = Harmonics   / 100f;  // 0..1
