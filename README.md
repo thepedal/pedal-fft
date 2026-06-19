@@ -1,52 +1,80 @@
-# Pedal FFT 1.3
+# Pedal FFT 2.0
 
-An FFT-based spectral distortion effect machine for [ReBuzz](https://github.com/wasteddesign/ReBuzz).
+Spectral drum processor for [ReBuzz](https://github.com/wasteddesign/ReBuzz).
 
-## Requirements
-
-- [ReBuzz](https://github.com/wasteddesign/ReBuzz)
-- [.NET 10 SDK (Windows x64)](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) — to build
-
-## Building
+## Building & deploying
 
 ```powershell
-dotnet build PedalFFT/PedalFFT.csproj -c Release
+dotnet build PedalFFT.csproj -c Release
 ```
 
-Output `Pedal FFT.NET.dll` is written directly to `C:\Program Files\ReBuzz\Gear\Effects\`.
-Override if needed:
+Deploys both `Pedal FFT.NET.dll` and `Pedal FFT.prs.xml` to
+`C:\Program Files\ReBuzz\Gear\Effects\`. Override if needed:
 
 ```powershell
-dotnet build PedalFFT/PedalFFT.csproj -c Release /p:BuzzDir="D:\ReBuzz"
+dotnet build PedalFFT.csproj -c Release /p:BuzzDir="D:\ReBuzz"
+```
+
+The preset bundle auto-loads on first machine drop — presets appear immediately
+in the right-click menu, no import step required.
+
+## Processing chain
+
+```
+FFT → [D: flux → isAttack] → [C: per-band drive+tilt × weight] → [C: harmonics] → [E: comb] → IFFT
 ```
 
 ## Parameters
 
-| Parameter  | Range             | Default | Description |
-|------------|-------------------|---------|-------------|
-| Drive      | 0 – 200           | 50      | Spectral tanh saturation per bin |
-| Harmonics  | 0 – 100           | 25      | Add 2nd + 3rd harmonic content |
-| Spec Gate  | 0 – 100           | 0       | Zero bins below this % of spectral peak |
-| Wet Mix    | 0 – 100           | 100     | Dry/wet blend |
-| Level      | 0 – 400           | 100     | Output trim. 100 = unity, 200 = +6 dB, 400 = +12 dB |
-| Bin Shift  | 0 – 256           | 128     | Spectrum shift. 128 = no shift, <128 = down, >128 = up |
-| FFT Size   | 256/512/1024/2048 | 1024    | Window size; latency = size ÷ 2 samples |
-| Bypass     | no / yes          | no      | Hard bypass |
+### C — Per-band (4 bands: sub/kick · body · crack · air)
+| Parameter  | Range  | Default | Notes |
+|------------|--------|---------|-------|
+| Low Drive  | 0–200  | 50      | Saturation for low bands |
+| High Drive | 0–200  | 50      | Saturation for high bands |
+| Band Tilt  | 0–200  | 100     | 100 = flat, >100 = bright, <100 = dark |
+| Band Harm  | 0–100  | 25      | 2nd harmonic exciter per band |
 
-## Changelog
+### D — Transient detection
+| Parameter   | Range  | Default | Notes |
+|-------------|--------|---------|-------|
+| Sensitivity | 0–100  | 40      | Flux threshold |
+| Atk Weight  | 0–100  | 100     | Processing weight on hit frames |
+| Sus Weight  | 0–100  | 15      | Processing weight between hits |
 
-**v1.3**
-- Silence detection: Work() returns false when input is below ~-72 dBFS and the
-  STFT overlap buffer has fully drained. Zero CPU usage during silence.
+### E — Comb resonance
+| Parameter  | Range  | Default | Notes |
+|------------|--------|---------|-------|
+| Resonance  | 0–100  | 0       | Comb amount (0 = disabled) |
+| Comb Decay | 0–100  | 60      | Ring-off time |
+| Spread     | 0–100  | 0       | 0 = pitched, >0 = metallic |
 
-**v1.2**
-- Added Level output trim (0–400, default 100 = unity)
+### Global
+| Parameter | Range             | Default | Notes |
+|-----------|-------------------|---------|-------|
+| Wet Mix   | 0–100             | 100     | Dry/wet |
+| Level     | 0–400             | 100     | Output trim |
+| FFT Size  | 256/512/1024/2048 | 512     | 512 recommended for drums |
+| Bypass    | no/yes            | no      | Hard bypass |
 
-**v1.1**
-- Fixed ±32768 sample scale bug
-- Added Bin Shift
+## Presets (30)
 
-**v1.0** — initial release
+### Drum Processing
+Drum Room · Kick Punch · Snare Crack · Think Break · Hard Bop · Transient Sniper
+
+### Comb Resonance
+Pitched Ring · Metal Bell · Gong Hit · Sci-Fi Drums · Tuned Kick · Snare Rattle
+
+### Heavy Saturation
+Fried Drums · Overdrive · Spectral Crush · Crunch Box · Band Splitter
+
+### Tonal Shaping
+Dark Matter · Air and Edge · Sub Emphasis · Presence Boost · Full Range
+
+### Texture & Character
+Ghost Notes · Sustain Smear · Stutter Gate · Velvet Drums · Vintage Crunch
+
+### Experimental
+Spectral Melt · Robot Drums · Through the Wall
 
 ## License
 

@@ -2,9 +2,6 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net10.0-windows</TargetFramework>
-    <DebugType>none</DebugType>
-    <DebugSymbols>false</DebugSymbols>
-    <GenerateDependencyFile>false</GenerateDependencyFile>
     <AssemblyName>Pedal FFT.NET</AssemblyName>
     <RootNamespace>WDE.PedalFFT</RootNamespace>
     <Nullable>disable</Nullable>
@@ -12,15 +9,44 @@
     <Platforms>x64</Platforms>
     <PlatformTarget>x64</PlatformTarget>
     <Optimize>true</Optimize>
+    <!-- ReBuzz only needs the .dll; suppress .pdb and .deps.json -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <!-- BuzzGUI.Interfaces.dll references WindowsBase 4.0.0.0; .NET 10 ships
+         WindowsBase 10.0.0.0. Conflict is harmless at runtime. -->
+    <NoWarn>$(NoWarn);MSB3277</NoWarn>
     <BuzzDir Condition="'$(BuzzDir)' == ''">C:\Program Files\ReBuzz</BuzzDir>
     <OutputPath>$(BuzzDir)\Gear\Effects\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="BuzzGUI.Interfaces">
       <HintPath>$(BuzzDir)\BuzzGUI.Interfaces.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
+
+  <!--
+    Preset bundle deploy. Uses ItemGroup rather than a literal SourceFiles string
+    so the embedded space in "Pedal FFT.prs.xml" round-trips cleanly through MSBuild.
+    Message tasks before each Copy make silent failures visible in the build log.
+  -->
+  <ItemGroup>
+    <PresetBundle Include="Pedal FFT.prs.xml" />
+  </ItemGroup>
+
+  <Target Name="DeployToReBuzz" AfterTargets="Build">
+    <Message Text="Deploying $(TargetFileName) → $(OutputPath)" Importance="high" />
+    <Copy SourceFiles="$(TargetPath)"
+          DestinationFolder="$(OutputPath)"
+          ContinueOnError="true" />
+    <Message Text="Deploying @(PresetBundle) → $(OutputPath)" Importance="high" />
+    <Copy SourceFiles="@(PresetBundle)"
+          DestinationFolder="$(OutputPath)"
+          ContinueOnError="true" />
+  </Target>
+
 </Project>

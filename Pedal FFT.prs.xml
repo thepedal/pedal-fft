@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PresetDictionary>
+  <Item Key="Drum Room">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="60" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="40" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="110" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="20" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="10" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="105" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Balanced starting point. Moderate drive, slight brightness, clean gaps.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Kick Punch">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="140" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="30" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="80" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="40" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="120" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Heavy low saturation, dark tilt, no sustain processing. Emphasises sub-kick impact.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Snare Crack">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="40" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="150" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="145" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="30" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="35" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="5" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="110" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Bright tilt, high-end drive. Makes snares cut through dense mixes.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Think Break">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="80" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="60" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="120" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="35" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="15" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="20" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="40" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="10" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Classic break processing. Balanced drive, slight bright tilt, light comb ring.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Hard Bop">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="120" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="100" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="115" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="50" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="35" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="20" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="95" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Heavy across all bands. Maximum impact, works on full drum loops.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Transient Sniper">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="100" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="80" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="130" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="45" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="55" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="115" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="0" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>256-sample FFT for sharpest time resolution. Zero sustain — processes only on hits.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Pitched Ring">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="50" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="50" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="105" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="20" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="10" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="60" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="70" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Clean harmonic comb ring on each hit. Spread 0 = perfectly pitched.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Metal Bell">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="50" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="70" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="130" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="25" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="5" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="70" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="75" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="45" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Detuned harmonics create bell-like metallic ring. Decays naturally.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Gong Hit">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="40" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="40" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="100" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="15" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="35" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="80" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="90" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="65" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="85" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="2" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Long inharmonic comb sustain. Resonance rings between hits like a struck gong.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Sci-Fi Drums">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="50" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="80" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="140" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="30" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="30" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="5" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="90" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="85" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="90" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="90" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="2" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Extreme spread comb + bright tilt. Otherworldly metallic textures on every hit.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Tuned Kick">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="100" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="20" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="70" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="50" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="50" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="50" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="55" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="5" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="80" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="115" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Pitched ring triggered by kick frequency. Low tilt emphasises the sub-bass ring.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Snare Rattle">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="30" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="120" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="150" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="60" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="35" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="45" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="30" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="20" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="0" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Fast-decaying metallic rattle on snare hits. 256 FFT for tight response.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Fried Drums">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="180" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="160" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="110" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="75" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="30" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="25" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="80" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Maximum saturation across all bands. Harmonics pushed hard. Reduce Level if clipping.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Overdrive">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="160" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="140" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="125" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="60" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="35" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="20" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="85" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>High but controlled drive. Classic overdriven drum character.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Spectral Crush">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="130" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="110" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="120" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="55" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="60" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="90" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="0" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Heavy drive, 256 FFT, zero sustain. Each hit gets crushed independently.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Crunch Box">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="150" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="60" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="95" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="40" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="10" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="95" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Asymmetric drive — heavy lows, light highs. Kick crunch without cymbal harshness.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Band Splitter">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="20" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="160" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="170" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="35" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="15" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Inverse asymmetric — clean lows, fried highs. Bright and aggressive top end.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Dark Matter">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="100" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="20" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="60" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="45" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="15" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="110" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="2" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Heavy low tilt and saturation. Emphasises sub and body frequencies.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Air and Edge">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="20" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="120" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="160" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="20" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="10" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Bright tilt with high-end drive. Cuts through dense arrangements.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Sub Emphasis">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="80" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="10" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="45" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="30" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="50" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="120" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="2" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Extreme low tilt. Kicks out sub, attenuates highs. Good before a low-pass filter.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Presence Boost">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="40" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="90" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="135" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="25" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="15" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Moderate bright tilt. Adds upper-mid presence and definition without harshness.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Full Range">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="70" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="70" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="100" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="30" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="15" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Flat tilt, balanced drive across all bands. Even-handed spectral treatment.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Ghost Notes">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="20" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="20" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="100" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="10" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="25" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="40" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="5" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="50" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Very light processing at low weight. Subtle spectral colouring that barely registers.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Sustain Smear">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="60" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="50" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="110" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="40" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="30" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="60" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="2" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>High sustain weight = continuous processing between hits. More washy, textural.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Stutter Gate">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="80" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="60" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="120" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="30" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="45" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="0" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="110" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="0" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>256 FFT, zero sustain, moderate sensitivity. Creates rhythmic on/off gating effect.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Velvet Drums">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="40" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="30" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="95" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="15" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="80" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="20" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="70" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="105" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Gentle, warm, slightly dull. Good for softening harsh samples.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Vintage Crunch">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="90" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="40" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="85" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="55" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="20" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="2" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>Dark tilt, medium drive, rich harmonics. Old-school analogue character.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Spectral Melt">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="50" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="50" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="100" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="80" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="25" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="70" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="40" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="85" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="30" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="90" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="100" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="3" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>2048 FFT, high sus weight, rich harmonics and long comb. Psychedelic drum wash.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Robot Drums">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="50" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="80" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="120" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="40" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="100" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="5" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="85" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="65" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="80" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="100" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="95" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>High spread comb + bright tilt. Every hit triggers an inharmonic metallic chord.</Comment>
+    </Preset>
+  </Item>
+  <Item Key="Through the Wall">
+    <Preset Machine="Pedal FFT">
+      <Parameters>
+        <Parameter Name="Low Drive" Group="1" Index="0" Track="0" Value="60" />
+        <Parameter Name="High Drive" Group="1" Index="1" Track="0" Value="50" />
+        <Parameter Name="Band Tilt" Group="1" Index="2" Track="0" Value="110" />
+        <Parameter Name="Band Harm" Group="1" Index="3" Track="0" Value="20" />
+        <Parameter Name="Sensitivity" Group="1" Index="4" Track="0" Value="40" />
+        <Parameter Name="Atk Weight" Group="1" Index="5" Track="0" Value="90" />
+        <Parameter Name="Sus Weight" Group="1" Index="6" Track="0" Value="10" />
+        <Parameter Name="Resonance" Group="1" Index="7" Track="0" Value="0" />
+        <Parameter Name="Comb Decay" Group="1" Index="8" Track="0" Value="60" />
+        <Parameter Name="Spread" Group="1" Index="9" Track="0" Value="0" />
+        <Parameter Name="Wet Mix" Group="1" Index="10" Track="0" Value="35" />
+        <Parameter Name="Level" Group="1" Index="11" Track="0" Value="110" />
+        <Parameter Name="FFT Size" Group="1" Index="12" Track="0" Value="1" />
+        <Parameter Name="Bypass" Group="1" Index="13" Track="0" Value="0" />
+      </Parameters>
+      <Attributes />
+      <Comment>35% wet blend. Parallel spectral processing — keeps the original punch underneath.</Comment>
+    </Preset>
+  </Item>
+</PresetDictionary>
